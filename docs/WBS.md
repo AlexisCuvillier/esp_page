@@ -1,4 +1,4 @@
-# 🧱 SPOT — Work Breakdown Structure (WBS)
+# 🧱 SPOT — WBS & Description des Fonctions
 
 > *La réalité d'hier dans le monde d'aujourd'hui*
 
@@ -291,13 +291,5 @@ La promotion assure la visibilité du projet : teaser vidéo, site web, identit�
 
 ---
 
-<div align="center">
-
-## 🌟 SPOT
-
-**La réalité d'hier dans le monde d'aujourd'hui**
-
-*Version 1.1 — Décembre 2025*
-
-</div>
+**SPOT** — *La réalité d'hier dans le monde d'aujourd'hui* — v1.1 — 🌐 Site : [esp-page.vercel.app](https://esp-page.vercel.app/)
 

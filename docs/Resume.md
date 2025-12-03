@@ -1,14 +1,8 @@
 # SPOT — Résumé du Projet
 
----
-
-<div align="center">
-
 ![Logo SPOT](../media/logo.png)
 
 ### *La réalité d'hier dans le monde d'aujourd'hui*
-
-</div>
 
 ---
 
@@ -18,11 +12,6 @@ SPOT est une application gratuite qui valorise le **patrimoine historique**, **c
 
 ---
 
-<div align="center">
-
 *Projet étudiant — 2025-2027*
 
-🌐 **[esp-page.vercel.app](https://esp-page.vercel.app/)**
-
-</div>
-
+🌐 **Site web :** [esp-page.vercel.app](https://esp-page.vercel.app/)
