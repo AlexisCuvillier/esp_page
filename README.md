@@ -57,50 +57,51 @@ Proposez vos propres SPOTs depuis l'application.
 
 ---
 
-# 🧱 Work Breakdown Structure (WBS)
+## 🧱 Work Breakdown Structure (WBS)
 
-1 Application Mobile
-1.1 Interface utilisateur
-1.2 Carte interactive
-1.3 Fiches SPOT
-1.4 Paramètres
-1.5 Profil utilisateur
+### 1. Application Mobile
+- **1.1** Interface utilisateur  
+- **1.2** Carte interactive  
+- **1.3** Fiches SPOT  
+- **1.4** Paramètres  
+- **1.5** Profil utilisateur  
 
-2 Gamification
-2.1 Trophées
-2.2 Grades
-2.3 Rareté
-2.4 Succès
-2.5 Classements
+### 2. Gamification
+- **2.1** Trophées  
+- **2.2** Grades  
+- **2.3** Rareté  
+- **2.4** Succès  
+- **2.5** Classements  
 
-3 Gestion des SPOTs
-3.1 Base de données
-3.2 Catégories
-3.3 Métadonnées
-3.4 Ajout par utilisateur
-3.5 Modération
+### 3. Gestion des SPOTs
+- **3.1** Base de données  
+- **3.2** Catégories  
+- **3.3** Métadonnées  
+- **3.4** Ajout par utilisateur  
+- **3.5** Modération  
 
-4 Communauté
-4.1 Comptes utilisateurs
-4.2 Classement amis
-4.3 Contribution
-4.4 Profils publics
+### 4. Communauté
+- **4.1** Comptes utilisateurs  
+- **4.2** Classement amis  
+- **4.3** Contribution  
+- **4.4** Profils publics  
 
-5 Backend
-5.1 API
-5.2 Stockage
-5.3 Sécurité
-5.4 Calcul des récompenses
+### 5. Backend
+- **5.1** API  
+- **5.2** Stockage  
+- **5.3** Sécurité  
+- **5.4** Calcul des récompenses  
 
-6 Promotion
-6.1 Teaser
-6.2 GitHub Page
-6.3 Identité visuelle
-6.4 Présentation orale
+### 6. Promotion
+- **6.1** Teaser  
+- **6.2** GitHub Page  
+- **6.3** Identité visuelle  
+- **6.4** Présentation orale  
 
-7 Recrutement (promo interne)
-7.1 Discord
-7.2 Infos projet
+### 7. Recrutement (promo interne)
+- **7.1** Discord  
+- **7.2** Infos projet
+
 
 
 ---
