@@ -129,12 +129,13 @@ Le projet SPOT recrute au sein de la promotion.
 
 
 
-<div>
-  <p align="center">
-    <h1>🌟 Merci !</h1>
-    <p><strong>SPOT — La réalité d’hier dans le monde d’aujourd’hui</strong></p>
-  </p>
+
+<div align="center">
+  <h1>🌟 Merci !</h1>
+  <p><strong>SPOT — La réalité d’hier dans le monde d’aujourd’hui</strong></p>
 </div>
+
+
 
 
 
