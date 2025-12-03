@@ -1,4 +1,3 @@
-<div align="center">
 
 # 🌍 SPOT  
 ### *La réalité d’hier dans le monde d’aujourd’hui*
@@ -13,7 +12,6 @@
 
 ---
 
-</div>
 
 # 📖 Résumé du projet (48 mots)
 
@@ -126,10 +124,10 @@ Le projet SPOT recrute au sein de la promotion.
 
 ---
 
-<div align="center">
+
 
 # 🌟 Merci !
 **SPOT — La réalité d’hier dans le monde d’aujourd’hui**
 
-</div>
+
 
