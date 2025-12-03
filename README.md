@@ -3,7 +3,7 @@
 # 🌍 SPOT  
 ### *La réalité d’hier dans le monde d’aujourd’hui*
 
-<img src="media/logo.png" width="200"/>
+<img src="./logo.png" width="200"/>
 
 ---
 
