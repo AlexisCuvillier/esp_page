@@ -5,9 +5,17 @@
 
 1. APPLICATION MOBILE
 ================================================================================
+   
+   L'application mobile est le cœur du projet SPOT. Elle permet aux utilisateurs
+   de découvrir le patrimoine local via une interface intuitive, d'explorer une
+   carte interactive, de consulter les fiches descriptives des lieux, et de gérer
+   leur profil et leurs préférences.
 
    1.1 Interface Utilisateur (UI)
    -----------------------------
+   L'interface utilisateur définit l'expérience visuelle et interactive de 
+   l'application. Elle comprend le design system (couleurs, composants), la 
+   navigation entre les écrans, et les différents thèmes disponibles.
        1.1.1 Design System
              - Charte graphique (couleurs, typographie)
              - Composants réutilisables (boutons, cards, modals)
@@ -27,6 +35,10 @@
 
    1.2 Carte Interactive
    ---------------------
+   La carte interactive est la fonctionnalité principale de l'application. Elle
+   affiche les SPOT (points d'intérêt) sur une carte géolocalisée, permet de
+   filtrer les lieux par catégorie ou rareté, et offre une recherche avancée.
+
        1.2.1 Affichage de la carte
              - Intégration MapBox / Google Maps
              - Tuiles personnalisées
@@ -48,6 +60,11 @@
 
    1.3 Fiches SPOT
    ---------------
+   Chaque SPOT dispose d'une fiche détaillée présentant le lieu : description,
+   photos, informations historiques, et données pratiques. L'utilisateur peut
+   interagir avec la fiche (check-in, partage, favoris) et voir les récompenses
+   associées à la découverte du lieu.
+
        1.3.1 Contenu de la fiche
              - Nom et description du lieu
              - Photos/galerie d'images
@@ -69,6 +86,10 @@
 
    1.4 Paramètres
    --------------
+   Les paramètres permettent à l'utilisateur de personnaliser son expérience :
+   gestion du compte, préférences de notifications, options d'accessibilité,
+   et configuration générale de l'application (langue, unités, cache).
+
        1.4.1 Compte
              - Modification du profil
              - Changement de mot de passe
@@ -94,6 +115,10 @@
 
    1.5 Profil Utilisateur
    ----------------------
+   Le profil utilisateur affiche les informations personnelles, les statistiques
+   de progression (SPOT découverts, XP, grade), et les collections de l'utilisateur.
+   C'est un espace de suivi et de valorisation des accomplissements.
+
        1.5.1 Informations personnelles
              - Avatar personnalisable
              - Pseudo
@@ -117,8 +142,16 @@
 2. GAMIFICATION
 ================================================================================
 
+   La gamification transforme la découverte du patrimoine en expérience ludique
+   et motivante. Elle repose sur un système de récompenses (trophées, XP, grades),
+   un mécanisme de rareté des SPOT, des succès à débloquer, et des classements
+   pour stimuler la compétition amicale entre utilisateurs.
+
    2.1 Trophées
    ------------
+   Les trophées récompensent les accomplissements de l'utilisateur. Ils sont
+   classés par type (exploration, collection, social) et par niveau de difficulté
+   (bronze, argent, or, platine). Leur obtention est célébrée par des animations.
        2.1.1 Types de trophées
              - Exploration (nombre de SPOT visités)
              - Collection (tous les SPOT d'une catégorie)
@@ -140,6 +173,10 @@
 
    2.2 Grades
    ----------
+   Le système de grades récompense la progression globale de l'utilisateur.
+   Chaque découverte de SPOT rapporte de l'XP, permettant de monter en grade
+   (de "Explorateur Novice" à "Légende") et de débloquer des avantages exclusifs.
+
        2.2.1 Système de grades
              - Explorateur Novice (0 - 100 XP)
              - Explorateur Confirmé (100 - 500 XP)
@@ -158,6 +195,10 @@
 
    2.3 Rareté des SPOT
    -------------------
+   Chaque SPOT est classé selon un niveau de rareté (Commun, Rare, Unique,
+   Légendaire) basé sur son importance historique et son accessibilité. Les
+   SPOT rares rapportent plus d'XP et sont plus difficiles à trouver.
+
        2.3.1 Niveaux de rareté
              - Commun (60%) - 10 XP
              - Rare (25%) - 25 XP
@@ -172,6 +213,10 @@
 
    2.4 Succès
    ----------
+   Les succès sont des objectifs spécifiques à accomplir : explorer un certain
+   nombre de SPOT, compléter des collections thématiques, ou réaliser des actions
+   sociales. Ils offrent des récompenses et enrichissent l'expérience de jeu.
+
        2.4.1 Succès d'exploration
              - Premier SPOT découvert
              - 10/50/100/500 SPOT découverts
@@ -192,6 +237,10 @@
 
    2.5 Classements
    ---------------
+   Les classements permettent aux utilisateurs de comparer leur progression avec
+   leurs amis ou la communauté. Ils sont disponibles en plusieurs formats :
+   global, amis, régional, hebdomadaire et mensuel.
+
        2.5.1 Types de classements
              - Classement global
              - Classement amis
@@ -209,8 +258,16 @@
 3. GESTION DES SPOT
 ================================================================================
 
+   Cette section couvre tout ce qui concerne les SPOT eux-mêmes : leur stockage
+   en base de données, leur catégorisation, leurs métadonnées enrichies, le
+   système de contribution utilisateur, et le processus de modération pour
+   garantir la qualité du contenu.
+
    3.1 Base de Données
    -------------------
+   La base de données stocke toutes les informations des SPOT : identifiant,
+   nom, description, coordonnées GPS, catégorie, rareté, images et métadonnées.
+   Les données proviennent de sources officielles et des contributions utilisateurs.
        3.1.1 Structure des données
              - ID unique
              - Nom, description
@@ -230,6 +287,10 @@
 
    3.2 Catégories
    --------------
+   Les SPOT sont organisés en catégories thématiques (historique, culturel,
+   océanique, naturel, architectural) et sous-catégories plus précises pour
+   faciliter la recherche et la collection.
+
        3.2.1 Catégories principales
              - Patrimoine Historique
              - Patrimoine Culturel
@@ -250,6 +311,10 @@
 
    3.3 Métadonnées
    ---------------
+   Chaque SPOT est enrichi de métadonnées : contexte historique, personnages
+   associés, anecdotes, ainsi que des informations pratiques (accessibilité,
+   parking, tarifs, temps de visite estimé).
+
        3.3.1 Informations enrichies
              - Période historique
              - Personnages associés
@@ -266,6 +331,10 @@
 
    3.4 Ajout par Utilisateur
    -------------------------
+   Les utilisateurs peuvent proposer de nouveaux SPOT via un formulaire dédié.
+   Chaque proposition inclut le nom, la localisation, une description, des photos
+   et une justification. Le statut de la proposition est suivi jusqu'à validation.
+
        3.4.1 Formulaire de proposition
              - Nom du lieu
              - Localisation (carte + adresse)
@@ -282,6 +351,10 @@
 
    3.5 Modération
    --------------
+   La modération garantit la qualité des SPOT publiés. Elle comprend une
+   vérification automatique (doublons, spam), une révision humaine, l'attribution
+   de la rareté, et des outils de gestion pour les modérateurs.
+
        3.5.1 Processus de validation
              - Vérification automatique (doublons, spam)
              - Révision par modérateurs
@@ -298,8 +371,16 @@
 4. COMMUNAUTÉ
 ================================================================================
 
+   La dimension communautaire de SPOT permet aux utilisateurs de créer un compte,
+   d'ajouter des amis, de comparer leurs progressions, de contribuer au contenu,
+   et de personnaliser leur profil public. Elle renforce l'aspect social et
+   l'engagement des utilisateurs.
+
    4.1 Comptes Utilisateurs
    ------------------------
+   Le système de comptes permet l'inscription (email ou OAuth), l'authentification
+   sécurisée (biométrie possible), et la gestion des sessions. Il inclut également
+   la récupération de mot de passe et un tutoriel d'onboarding.
        4.1.1 Inscription
              - Email + mot de passe
              - OAuth (Google, Apple, Facebook)
@@ -314,6 +395,10 @@
 
    4.2 Classement Amis
    -------------------
+   Les utilisateurs peuvent ajouter des amis (recherche, QR code, contacts),
+   consulter leurs profils, comparer leurs statistiques, et se lancer des défis.
+   Les notifications d'activité maintiennent le lien social.
+
        4.2.1 Gestion des amis
              - Recherche par pseudo
              - Ajout par QR code
@@ -328,6 +413,10 @@
 
    4.3 Contribution
    ----------------
+   Les contributeurs qui proposent des SPOT validés sont récompensés : badge
+   spécial, XP bonus, et mention dans les crédits. Ils peuvent atteindre
+   différents niveaux de contributeur selon le nombre de SPOT validés.
+
        4.3.1 Récompenses contributeur
              - Badge "Contributeur"
              - XP bonus pour SPOT validé
@@ -340,6 +429,10 @@
 
    4.4 Profils Publics
    -------------------
+   Les profils publics permettent aux utilisateurs de partager leur progression
+   avec la communauté. Ils peuvent choisir les informations visibles, personnaliser
+   l'apparence de leur profil, et mettre en avant leurs meilleurs accomplissements.
+
        4.4.1 Visibilité
              - Profil public / privé
              - Statistiques visibles
@@ -355,8 +448,16 @@
 5. BACKEND
 ================================================================================
 
+   Le backend constitue l'infrastructure technique du projet. Il comprend l'API
+   REST qui connecte l'application aux données, le système de stockage (base de
+   données, fichiers), les mesures de sécurité, et le moteur de calcul des
+   récompenses de gamification.
+
    5.1 API
    -------
+   L'API REST expose les endpoints nécessaires au fonctionnement de l'application :
+   authentification, gestion des utilisateurs, CRUD des SPOT, succès/trophées,
+   et classements. Elle utilise JWT pour la sécurité et est documentée via Swagger.
        5.1.1 Endpoints principaux
              - /auth (inscription, login, logout)
              - /users (profil, stats, amis)
@@ -373,6 +474,10 @@
 
    5.2 Stockage
    ------------
+   Le stockage gère la persistance des données : PostgreSQL pour les données
+   relationnelles, Redis pour le cache, et un stockage cloud (S3) pour les
+   images avec CDN et backup automatisé.
+
        5.2.1 Base de données
              - PostgreSQL (données relationnelles)
              - Redis (cache, sessions)
@@ -386,6 +491,10 @@
 
    5.3 Sécurité
    ------------
+   La sécurité protège les données utilisateurs (chiffrement, RGPD) et
+   l'application (CSRF, injection SQL, validation des entrées). Des logs
+   d'audit permettent de tracer les actions sensibles.
+
        5.3.1 Protection des données
              - Chiffrement en transit (HTTPS)
              - Chiffrement au repos
@@ -400,6 +509,10 @@
 
    5.4 Calcul des Récompenses
    --------------------------
+   Le moteur de gamification calcule en temps réel l'XP gagnée, vérifie les
+   conditions de déblocage des succès, attribue les grades, et met à jour les
+   classements. Il inclut un système anti-triche basé sur la géolocalisation.
+
        5.4.1 Moteur de gamification
              - Calcul XP en temps réel
              - Vérification des succès
@@ -416,8 +529,16 @@
 6. PROMOTION
 ================================================================================
 
+   La promotion assure la visibilité du projet auprès du public cible. Elle
+   comprend la production d'un teaser vidéo, la création d'un site web vitrine,
+   le développement d'une identité visuelle cohérente, et la préparation des
+   présentations orales.
+
    6.1 Teaser Vidéo
    ----------------
+   Le teaser est une vidéo courte et percutante présentant le concept de SPOT.
+   Elle est produite (scénario, tournage, montage) puis diffusée sur YouTube,
+   les réseaux sociaux et le site web du projet.
        6.1.1 Production
              - Scénario et storyboard
              - Tournage / Animation
@@ -431,6 +552,10 @@
 
    6.2 GitHub Page / Site Web
    --------------------------
+   Le site web présente le projet au public : description, fonctionnalités,
+   équipe et contact. Il est développé en Next.js avec un design responsive,
+   optimisé pour le SEO et équipé d'analytics.
+
        6.2.1 Contenu
              - Présentation du projet
              - Fonctionnalités
@@ -445,6 +570,10 @@
 
    6.3 Identité Visuelle
    ---------------------
+   L'identité visuelle définit l'image de marque de SPOT : logo, palette de
+   couleurs, typographie, et templates pour les réseaux sociaux. Une charte
+   graphique documente les règles d'utilisation.
+
        6.3.1 Éléments graphiques
              - Logo (versions couleur, N&B, icône)
              - Palette de couleurs
@@ -458,6 +587,10 @@
 
    6.4 Présentation Orale
    ----------------------
+   La présentation orale est préparée pour les soutenances et événements. Elle
+   comprend un pitch structuré, des slides visuelles, une démonstration live
+   de l'application, et l'anticipation des questions du jury.
+
        6.4.1 Préparation
              - Structure du pitch
              - Slides de présentation
@@ -470,39 +603,9 @@
              - Prototype fonctionnel
 
 
-7. RECRUTEMENT (PROMO INTERNE)
-================================================================================
-
-   7.1 Discord
-   -----------
-       7.1.1 Configuration serveur
-             - Canaux d'information
-             - Canaux de discussion
-             - Rôles et permissions
-             - Bot de bienvenue
-       
-       7.1.2 Animation
-             - Annonces régulières
-             - Q&A sessions
-             - Partage de l'avancement
-
-   7.2 Infos Projet
-   ----------------
-       7.2.1 Documentation
-             - README complet
-             - WBS détaillé (ce document)
-             - Planning prévisionnel
-             - Rôles recherchés
-       
-       7.2.2 Matériel de recrutement
-             - Pitch deck
-             - Présentation des postes
-             - Formulaire de candidature
-
-
 ================================================================================
                               FIN DU DOCUMENT WBS
-                                 Version 1.0
+                                 Version 1.1
                               Décembre 2025
 ================================================================================
 

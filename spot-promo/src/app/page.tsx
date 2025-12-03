@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollReveal from "./components/ScrollReveal";
 import ScrollTrace from "./components/ScrollTrace";
 
 const navItems = [
@@ -8,6 +9,7 @@ const navItems = [
   { label: "Fonctionnalités", href: "#features" },
   { label: "Structure", href: "#wbs" },
   { label: "Rejoindre", href: "#join" },
+  { label: "📄 Docs", href: "/documentation" },
 ];
 
 const features = [
@@ -212,10 +214,12 @@ export default function Home() {
                 "Classement entre amis",
                 "Proposition de nouveaux SPOTs"
               ].map((item, index) => (
-                <div key={index} className="feature-card p-6 rounded-xl flex items-center gap-4">
-                  <span className="text-2xl">✨</span>
-                  <span className="text-lg">{item}</span>
-                </div>
+                <ScrollReveal key={index} delay={index * 100} direction="up">
+                  <div className="feature-card p-6 rounded-xl flex items-center gap-4">
+                    <span className="text-2xl">✨</span>
+                    <span className="text-lg">{item}</span>
+                  </div>
+                </ScrollReveal>
               ))}
             </div>
             
@@ -239,20 +243,19 @@ export default function Home() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="feature-card p-8 rounded-2xl group"
-                >
-                  <span className="text-5xl block mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {feature.icon}
-                  </span>
-                  <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-semibold mb-4 text-[var(--accent-light)]">
-                    {feature.title}
-                  </h3>
-                  <p className="text-[var(--foreground)]/70 leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
+                <ScrollReveal key={index} delay={index * 100} direction="up">
+                  <div className="feature-card p-8 rounded-2xl group h-full">
+                    <span className="text-5xl block mb-6 group-hover:scale-110 transition-transform duration-300">
+                      {feature.icon}
+                    </span>
+                    <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-semibold mb-4 text-[var(--accent-light)]">
+                      {feature.title}
+                    </h3>
+                    <p className="text-[var(--foreground)]/70 leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -270,13 +273,14 @@ export default function Home() {
             
             <div className="flex flex-wrap justify-center gap-6">
               {rarities.map((rarity, index) => (
-                <div
-                  key={index}
-                  className={`${rarity.class} px-8 py-4 rounded-full text-white font-bold shadow-lg hover:scale-110 transition-transform duration-300`}
-                >
-                  <span className="block text-lg">{rarity.name}</span>
-                  <span className="block text-sm opacity-80">{rarity.count}</span>
-                </div>
+                <ScrollReveal key={index} delay={index * 150} direction="up">
+                  <div
+                    className={`${rarity.class} px-8 py-4 rounded-full text-white font-bold shadow-lg hover:scale-110 transition-transform duration-300`}
+                  >
+                    <span className="block text-lg">{rarity.name}</span>
+                    <span className="block text-sm opacity-80">{rarity.count}</span>
+                  </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -296,19 +300,21 @@ export default function Home() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {wbsItems.map((section, index) => (
-                <div key={index} className="feature-card p-6 rounded-2xl">
-                  <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold mb-4 text-[var(--accent)]">
-                    {index + 1}. {section.title}
-                  </h3>
-                  <ul className="space-y-2">
-                    {section.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-center gap-2 text-[var(--foreground)]/80">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-dark)]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <ScrollReveal key={index} delay={index * 100} direction="up">
+                  <div className="feature-card p-6 rounded-2xl h-full">
+                    <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold mb-4 text-[var(--accent)]">
+                      {index + 1}. {section.title}
+                    </h3>
+                    <ul className="space-y-2">
+                      {section.items.map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-center gap-2 text-[var(--foreground)]/80">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-dark)]" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
