@@ -1,17 +1,18 @@
+<p align="center">
+  <img src="./logo.png" width="200" alt="Logo SPOT">
+</p>
 
-# 🌍 SPOT  
-### *La réalité d’hier dans le monde d’aujourd’hui*
-
-<img src="./logo.png" width="200"/>
+<h1 align="center">🌍 SPOT</h1>
+<p align="center"><em>La réalité d’hier dans le monde d’aujourd’hui</em></p>
 
 ---
 
 ## 🎬 Teaser officiel
+
 👉 *Regarder le teaser :*  
 [📽️ Cliquez ici pour visionner la vidéo](media/teaser.mp4)
 
 ---
-
 
 # 📖 Résumé du projet (48 mots)
 
