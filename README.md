@@ -12,7 +12,7 @@
 ## 🎬 Teaser officiel
 
 👉 *Regarder le teaser :*  
-[📽️ Cliquez ici pour visionner la vidéo](media/teaser.mp4)
+[📽️ Cliquez ici pour visionner la vidéo](media/SPOT_Teaser.mp4)
 
 ---
 
