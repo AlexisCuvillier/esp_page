@@ -112,7 +112,7 @@ Proposez vos propres SPOTs depuis l'application.
 📄 [Résumé](docs/resume.txt)  
 🧱 [WBS](docs/wbs.txt)  
 🧩 [Fonctions](docs/fonctions.txt)  
-🎞️ [Teaser vidéo](media/teaser.mp4)  
+🎞️ [Teaser vidéo](media/SPOT_Teaser.mp4)  
 🖼️ [Logo SPOT](media/logo.png)
 
 ---
