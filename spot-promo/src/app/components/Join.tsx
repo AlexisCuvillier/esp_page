@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Join() {
   return (
     <section id="join" className="py-20 px-6 bg-gradient-to-b from-[var(--muted)]/30 to-transparent">
@@ -13,12 +15,24 @@ export default function Join() {
           <p className="text-xl mb-6">
             Toutes les informations de positionnement sont disponibles sur notre serveur Discord
           </p>
-          <p className="text-[var(--accent-light)] font-semibold">
-            🔗 QR code disponible dans le teaser
-          </p>
+          
+          {/* QR Code Discord */}
+          <div className="flex flex-col items-center gap-4">
+            <div className="bg-white p-4 rounded-xl shadow-lg">
+              <Image
+                src="/discord-qr.svg"
+                alt="QR Code Discord SPOT"
+                width={200}
+                height={200}
+                className="rounded-lg"
+              />
+            </div>
+            <p className="text-[var(--accent-light)] font-semibold">
+              📱 Scannez pour rejoindre le Discord
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
