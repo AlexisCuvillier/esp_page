@@ -1,9 +1,11 @@
-
+</div>
 <h1 align="center">🌍 SPOT</h1>
 <p align="center">
   <img src="./logo.png" width="200" alt="Logo SPOT">
 </p>
 <p align="center"><em>La réalité d’hier dans le monde d’aujourd’hui</em></p>
+<div>
+  
 
 ---
 
